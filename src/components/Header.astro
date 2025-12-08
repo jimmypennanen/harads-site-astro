@@ -1,0 +1,43 @@
+---
+const links1 = [
+  { name: "Hem", href: "/" },
+  { name: "Gläntan", href: "/about" },
+];
+const links2 = [
+  { name: "Butik", href: "/shop" },
+  { name: "Kontakt", href: "/contact" },
+];
+---
+<!------------------------------- HEADER ------------------------------->
+<header class="h-[50vh] bg-black text-center flex items-center justify-center gap-20 shadow-md">
+  
+  <!-------- Navigation part one -------->
+  <nav class="space-x-6 w-56 uppercase">
+    {links1.map(link => (
+      <a 
+        href={link.href} 
+        class="text-white text-2xl hover:text-amber-100 transition font-medium"
+      >
+        {link.name}
+      </a>
+    ))}
+  </nav>
+
+  <!-------- Logo -------->
+  <a href="/" class="mb-10">
+    <img src="/images/glantan-logga.jpg" alt="Gläntans djur och natur" class="h-60 w-auto"/>
+  </a>
+
+  <!-------- Navigation part two -------->
+  <nav class="space-x-6 w-56 uppercase">
+    {links2.map(link => (
+      <a 
+        href={link.href} 
+        class="text-white text-2xl hover:text-amber-100 transition font-medium"
+      >
+        {link.name}
+      </a>
+    ))}
+  </nav>
+
+</header>

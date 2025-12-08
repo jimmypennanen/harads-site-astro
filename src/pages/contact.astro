@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ImageBannerWide from '../components/ImageBannerWide.astro';
+---
+
+<Layout>
+
+  <ImageBannerWide 
+  title="Kontakt" 
+  text="Din lokala gårdsbutik för djurforder"
+  buttonText="Kontakta oss"  
+  backgroundImage="/images/contactHero.jpeg"/>
+
+<!------------------------------- Contact us ------------------------------->
+<section class="py-12">
+
+  <!-------- Text above the form -------->
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="font-bold text-lg uppercase mb-8 pl-30 pt-8">
+      Skicka ett mail
+    </h2>
+
+    <!-------- This is the form -------->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <div class="lg:col-span-3">
+        <form class="px-30 pt-3 bg-white/0">
+          <div class="relative z-0 mb-6">
+            <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm bg-creme border-transparent border-2 appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required />
+            <label for="name" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> Namn </label>
+          </div>
+
+          <div class="relative z-0 mb-6">
+            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm bg-creme border-transparent border-2 appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required/>
+            <label for="email" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> E-post </label>
+          </div>
+
+          <div class="relative mt-12">
+            <textarea  name="message" id="message" class="block py-2.5 px-0 w-full text-sm bg-creme border-2 border-transparent appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required  rows="12"></textarea>
+            <label for="messsage" class="-top-[1.4rem] peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75  origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75"> Meddelande </label>
+
+            <!-------- Button -------->
+            <input type="submit" value="SÄND" class="block w-min border-2 bg-beige hover:text-forest-light border-creme hover:border-creme ml-auto mt-5 cursor-pointer px-10 py-1"/>
+          </div> 
+        </form>
+      </div>
+
+      <!-------- Contact info on the side -------->
+      <div class="uppercase pl-0 pt-3 lg:pl-2">
+        <div class="p-5 pt-0">
+          <h3 class="font-heading text-md font-bold">Kontakt:</h3>
+          <a href="mailto:maalinlarsson@hotmail.com" class="block normal-case"> hello@glantan.com</a>
+          <a href="tel:004746415105" class="block normal-case"> 0123456789 </a>
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-bold font-heading text-md">Adress:</h3>
+          <p class="font-thin normal-case">Gläntan 1</p>
+          <p class="font-thin normal-case">Harads</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+ <!------------------------------- Map ------------------------------->
+<section class="bg-creme">
+    <h3 class="text-center py-10 uppercase text-3xl"> Hitta till vår gårdsbutik </h3>
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6470.183510095839!2d20.952380289812442!3d66.08264925690885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgl%C3%A4ntan%20harads!5e0!3m2!1ssv!2spt!4v1765138758069!5m2!1ssv!2spt" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=" opacity-40 pb-20"></iframe>
+    </div>
+</section>
+
+</Layout>

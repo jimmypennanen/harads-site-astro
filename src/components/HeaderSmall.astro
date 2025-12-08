@@ -1,0 +1,29 @@
+---
+const links = [
+  { name: "Hem", href: "/" },
+  { name: "Gläntan", href: "/about" },
+  { name: "Butik", href: "/shop" },
+  { name: "Kontakt", href: "/contact" },
+];
+---
+<!------------------------------- HEADER SMALL ------------------------------->
+<header class="h-[15vh] bg-black p-10 flex items-center justify-between gap-20 shadow-md">
+  
+  <!-------- Logo -------->
+  <a href="/" class="">
+    <img src="/images/glantan-logga.jpg" alt="Gläntans djur och natur" class="h-20 w-auto"/>
+  </a>
+
+  <!-------- Navigation -------->
+  <nav class="space-x-6 uppercase">
+    {links.map(link => (
+      <a 
+        href={link.href} 
+        class="text-white text-2xl hover:text-amber-100 transition font-medium"
+      >
+        {link.name}
+      </a>
+    ))}
+  </nav>
+
+</header>

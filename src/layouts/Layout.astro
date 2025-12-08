@@ -1,0 +1,33 @@
+---
+import Header from "../components/Header.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+
+const { headerType = "small" } = Astro.props;
+
+import Footer from '../components/Footer.astro';
+import '../styles/global.css'; // Importera globala stilar
+---
+
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Gläntan Djur och Natur </title>
+  </head>
+  <body class="font-serif text-gray-800">
+    
+        {
+      headerType === "large"
+        ? <Header />
+        : <HeaderSmall />
+    }
+
+
+    
+    <main>
+      <slot />  <!-- Här injiceras sidinnehållet -->
+    </main>
+    
+    <Footer />
+  </body>
+</html>
