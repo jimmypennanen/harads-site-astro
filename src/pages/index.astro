@@ -53,10 +53,10 @@ import ImageBanner from "../components/ImageBanner.astro";
   <!-------- Text banner -------->
   <section class="bg-white py-8 px-6">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-forest uppercase">
+      <h2 class="text-3xl md:text-3xl uppercase">
         Vi hjälper dig att hitta rätt foder till ditt djur
       </h2>
-      <p class="mt-4 text-xl max-w-2xl mx-auto font-thin text-forest">
+      <p class="mt-4 text-xl max-w-2xl mx-auto font-thin">
         Vi har ett stort utval av foder och leverantörer för att du ska hitta
         exakt det som passar ditt djur bäst, beställ online eller besök våran
         mysiga gårdsbutik Gläntan. Vi ses där lugnet möter naturen.
@@ -65,7 +65,7 @@ import ImageBanner from "../components/ImageBanner.astro";
   </section>
 
   <!-------- Products -------->
-  <section class="py-16 bg-white text-bright-brown]">
+  <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-6">
 
       <div class="grid md:grid-cols-4 gap-8">
@@ -73,7 +73,7 @@ import ImageBanner from "../components/ImageBanner.astro";
         <!-------- Button one -------->
         <div class="rounded-lg box-shadow">
 
-          <div class="p-6 bg-forest-light"> <!--- The image --->
+          <div class="p-6 bg-beige"> <!--- The image --->
             <img src="/images/ponker.jpeg" alt="shop" class="w-60 h-40 object-cover mx-auto mb-4"/>
           </div>
 
@@ -82,7 +82,7 @@ import ImageBanner from "../components/ImageBanner.astro";
             <p class="mb-4"> Small breed 15kg </p>
 
             <!--- Button --->
-            <a href="/kontakt" class="inline-block bg-forest text-white font-semibold px-20 py-2 rounded-lg hover:bg-gray-100 transition uppercase"> Köp </a>
+            <a href="/kontakt" class="inline-block bg-beige text-olive font-semibold px-20 py-2 rounded-lg hover:text-white hover:bg-olive transition uppercase"> Köp </a>
           </div>
 
         </div>
@@ -90,7 +90,7 @@ import ImageBanner from "../components/ImageBanner.astro";
         <!-------- Button two -------->
         <div class="rounded-lg box-shadow">
 
-          <div class="p-6 bg-[#FAF1DE]"> <!--- Image --->
+          <div class="p-6 bg-beige-1"> <!--- Image --->
             <img src="/images/snot.jpeg" alt="shop" class="w-60 h-40 object-cover mx-auto mb-4"/>
           </div>
 
@@ -99,7 +99,7 @@ import ImageBanner from "../components/ImageBanner.astro";
             <p class="mb-4"> Adult breed 22kg </p>
 
             <!--- Button --->
-            <a href="/kontakt" class="inline-block bg-[#FAF1DE] text-amber-400 font-semibold px-20 py-2 rounded-lg hover:bg-gray-100 transition uppercase"> Köp </a>
+            <a href="/kontakt" class="inline-block bg-olive text-white font-semibold px-20 py-2 rounded-lg hover:bg-gray-100 transition uppercase"> Köp </a>
           </div>
 
         </div>
@@ -141,20 +141,19 @@ import ImageBanner from "../components/ImageBanner.astro";
       </div>
 
       <!-------- Button to shop -------->
-      <a href="/shop" class="inline-block mt-15 ml-3 uppercase text-forest hover:border-b-1"> Våra erbjudanden → </a>
+      <a href="/shop" class="inline-block mt-15 ml-3 uppercase text-olive hover:border-b-1"> Våra erbjudanden → </a>
 
     </div>
   </section>
 
   <!-------- Call to action -------->
-  <section
-    class="py-16 bg-[#FAF1DE] text-[#847949] text-center max-w-[90%] mx-auto mb-16"
-  >
-    <h2 class="text-3xl font-bold mb-4 uppercase"> Redo att ta nästa steg? </h2>
-    <p class="mb-6 text-xl uppercase font-thin"> Beställ online eller besök våran gårdsbutik </p>
+  <section class="py-16 bg-beige text-center max-w-[90%] mx-auto mb-16">
+
+    <h2 class="text-3xl font-bold mb-4 uppercase"> Har vi inte din vara i vårt sortiment? </h2>
+    <p class="mb-6 text-xl uppercase font-thin text-gray-700"> Skriv till oss så ser vi om vi kan lösa det. </p>
 
     <!-------- Button -------->
-    <a href="/kontakt" class="inline-block bg-white text-amber-400 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition uppercase"> Kontakta oss </a>
+    <a href="/kontakt" class="inline-block bg-white text-olive font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition uppercase"> Kontakta oss </a>
 
   </section>
 
