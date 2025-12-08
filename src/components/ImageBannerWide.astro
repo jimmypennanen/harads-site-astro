@@ -1,13 +1,19 @@
 ---
-const { title, text, buttonText = "kontakt", backgroundImage = "/images/contactHero.jpeg" } = Astro.props;
+const {
+  title,
+  text,
+  buttonText = "kontakt",
+  backgroundImage = "/images/contactHero.jpeg",
+} = Astro.props;
 ---
 
 <section class="relative bg-gray-100 py-24 px-6 mx-auto">
   <!-- Bakgrundsbild -->
-  <div 
-    class="absolute inset-0 z-0 bg-cover bg-center opacity-45 bg-position-[center_top_10%] bg-no-repeat" 
-    style={`background-image: url('${backgroundImage}')`}>
-</div>
+  <div
+    class="absolute inset-0 z-0 bg-cover bg-center opacity-45 bg-position-[center_top_10%] bg-no-repeat"
+    style={`background-image: url('${backgroundImage}')`}
+  >
+  </div>
 
   <!-- Innehåll -->
   <div class="relative z-10 w-[25%] text-center">
@@ -19,7 +25,7 @@ const { title, text, buttonText = "kontakt", backgroundImage = "/images/contactH
     </p>
     <a
       href="/kontakt"
-      class="uppercase mt-6 inline-block bg-amber-100 text-amber-400 px-6 py-3 rounded-lg hover:bg-amber-400 transition"
+      class="uppercase mt-6 inline-block bg-white text-amber-400 hover:bg-gray-100 px-6 py-3 rounded-lg transition"
     >
       {buttonText}
     </a>
