@@ -2,14 +2,15 @@
 const {
   title,
   text,
-  buttonText = "kontakt",
-  backgroundImage = "/images/contactHero.jpeg",
+  backgroundImage = "/images/contact-hero.jpg",
+  backgroundPosition = "center",
+
 } = Astro.props;
 ---
 
 <section class="relative bg-gray-100 py-24 px-6 mx-auto">
 
-  <div class="absolute inset-0 z-0 bg-cover bg-center opacity-45 bg-position-[center_top_10%] bg-no-repeat" style={`background-image: url('${backgroundImage}')`}> </div> <!-------- Background image -------->
+  <div class="absolute inset-0 z-0 bg-cover bg-center opacity-45 bg-no-repeat" style={`background-image: url('${backgroundImage}'); background-position: ${backgroundPosition};`}> </div> <!-------- Background image -------->
 
   <!-------- Image text -------->
   <div class="relative z-10 w-[25%] text-center">
@@ -19,11 +20,6 @@ const {
     <p class="mt-4 text-xl text-black font-thin">
       {text}
     </p>
-    <a
-      href="/kontakt"
-      class="uppercase mt-6 inline-block bg-olive text-white hover:bg-brown-beige px-6 py-3 rounded-lg transition"
-    >
-      {buttonText}
-    </a>
+   
   </div>
 </section>

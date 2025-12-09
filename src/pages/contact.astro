@@ -8,8 +8,8 @@ import ImageBannerWide from '../components/ImageBannerWide.astro';
   <ImageBannerWide 
   title="Kontakt" 
   text="Din lokala gårdsbutik för djurforder"
-  buttonText="Kontakta oss"  
-  backgroundImage="/images/contact-hero.jpg"/>
+  backgroundImage="/images/contact-hero.jpg"
+  backgroundPosition="center top 10%" />
 
 <!------------------------------- CONTACT US ------------------------------->
 <section class="py-12">
@@ -24,21 +24,21 @@ import ImageBannerWide from '../components/ImageBannerWide.astro';
       <div class="lg:col-span-3">
         <form class="px-30 pt-3 bg-white/0">
           <div class="relative z-0 mb-6">
-            <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm bg-creme border-transparent border-2 appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required />
+            <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm bg-champagne border-transparent border-2 appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required />
             <label for="name" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> Namn </label>
           </div>
 
           <div class="relative z-0 mb-6"> <!--- Email input area --->
-            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm bg-creme border-transparent border-2 appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required/>
+            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm bg-champagne border-transparent border-2 appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required/>
             <label for="email" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> E-post </label>
           </div>
 
           <div class="relative mt-12"> <!--- Message area --->
-            <textarea  name="message" id="message" class="block py-2.5 px-0 w-full text-sm bg-creme border-2 border-transparent appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required  rows="12"></textarea>
+            <textarea  name="message" id="message" class="block py-2.5 px-0 w-full text-sm bg-champagne border-2 border-transparent appearance-none focus:outline-none focus:ring-0 focus:border-beige peer" placeholder=" " required  rows="12"></textarea>
             <label for="messsage" class="-top-[1.4rem] peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75  origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75"> Meddelande </label>
 
             <!-------- Button -------->
-            <input type="submit" value="SÄND" class="block w-min border-2 bg-olive text-white hover:bg-brown-beige ml-auto mt-5 cursor-pointer px-10 py-1"/>
+            <input type="submit" value="SÄND" class="block font-semibold w-min border-2 bg-olive text-white hover:bg-brown-beige ml-auto mt-5 cursor-pointer px-20 py-2 rounded-lg transition uppercase"/>
           </div> 
         </form>
       </div>
@@ -64,7 +64,7 @@ import ImageBannerWide from '../components/ImageBannerWide.astro';
 
  <!------------------------------- Map ------------------------------->
 <section class="bg-champagne">
-    <h3 class="text-center py-10 uppercase text-3xl"> Hitta till vår gårdsbutik </h3>
+    <h3 class="text-center py-10 font-thin uppercase text-3xl"> Hitta till vår gårdsbutik </h3>
     <div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6470.183510095839!2d20.952380289812442!3d66.08264925690885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgl%C3%A4ntan%20harads!5e0!3m2!1ssv!2spt!4v1765138758069!5m2!1ssv!2spt" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=" opacity-40 pb-20"></iframe>
     </div>
