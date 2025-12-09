@@ -2,7 +2,6 @@
 const {
   title,
   text,
-  buttonText = "kontakt",
   backgroundImage = "/images/hero-image.jpg",
 } = Astro.props;
 ---
@@ -22,11 +21,6 @@ const {
     <p class="mt-4 text-xl uppercase font-thin text-black"> <!--- Image paragraph --->
       {text}
     </p>
- 
-    <!-------- Button--------> 
-    <a href="/kontakt" class="mt-6 inline-block uppercase bg-olive text-white px-6 py-3 rounded-lg hover:bg-brown-beige transition">
-      {buttonText}
-    </a>
 
   </div>
 </section>
